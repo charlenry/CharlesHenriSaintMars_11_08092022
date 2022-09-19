@@ -1,17 +1,39 @@
-import classes from  './Header.module.css';
-import pinkLogo from '../../assets/images/logos/kasa-logo-pink.svg';
-
+import classes from "./Header.module.css";
+import pinkLogo from "../../assets/images/logos/kasa-logo-pink.svg";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = (props) => {
   return (
     <header>
       <div>
-        <img className={classes.header_logo} src={pinkLogo} alt="Page d'accueil" />
+        <Link to="/">
+          <img
+            className={classes.header_logo}
+            src={pinkLogo}
+            alt="Page d'accueil"
+          />
+        </Link>
       </div>
-      <ul>
-        <li>Accueil</li>
-        <li>A Propos</li>
-      </ul>
+      <nav>
+        <NavLink
+          aria-current="page d'accueil"
+          to="/"
+          className={({ isActive }) => {
+            return isActive ? classes.activeLink : classes.nonActiveLink;
+          }}
+        >
+          Accueil
+        </NavLink>
+        <NavLink
+          aria-current="à propos"
+          to="/about"
+          className={({ isActive }) => {
+            return isActive ? classes.activeLink : classes.nonActiveLink;
+          }}
+        >
+          A Propos
+        </NavLink>
+      </nav>
     </header>
   );
 };

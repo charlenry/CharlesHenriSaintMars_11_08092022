@@ -8,14 +8,19 @@ header {
   line-height: 3.422rem;
   color: #FF6060;
 }
-header ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-}
-header ul li:nth-child(2) {
+header nav a:nth-child(2) {
   margin-left: 5.7rem;
+}
+.activeLink:link {
+  color: #FF6060;
+}
+.activeLink:visited, .activeLink:active {
+  text-decoration: none;
+  color: #FF6060;
+}
+.nonActiveLink:link, .nonActiveLink:visited, .nonActiveLink:active {
+  text-decoration: none;
+  color: #FF6060;
 }
 
 /*** Medias Queries ***/
@@ -27,7 +32,7 @@ header ul li:nth-child(2) {
   .header_logo {
     height: 4.303rem;
   }
-  header ul li:nth-child(2) {
+  header nav a:nth-child(2) {
     margin-left: 1rem;
   }
 }
