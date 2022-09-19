@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.422rem;
+  color: #FF6060;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+header ul li:nth-child(2) {
+  margin-left: 5.7rem;
+}
+
+/*** Medias Queries ***/
+@media screen and (max-width : 576px) {
+  header {
+    font-size: 1.2rem;
+    line-height: 1.711rem;
+  }
+  .header_logo {
+    height: 4.303rem;
+  }
+  header ul li:nth-child(2) {
+    margin-left: 1rem;
+  }
+}
