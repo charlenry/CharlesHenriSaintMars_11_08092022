@@ -1,0 +1,66 @@
+.accordion_wrapper {
+  width: 100%;
+  height: auto;
+}
+.accordion_title {
+  height: 5.2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #ff6060;
+  border-radius: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.567rem;
+}
+.accordion_title svg {
+  width: 1.556rem;
+  height: 2.64rem;
+}
+.accordion_content {
+  min-height: 20rem;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.567rem;
+  color: #ff6060;
+  background-color: #F7F7F7;;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/*** Medias Queries ***/
+@media screen and (max-width: 1439px) {
+  .accordion_wrapper {
+    margin-bottom: 2rem;
+  }
+  .accordion_content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .accordion_title {
+    height: 2.993rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1.426rem;
+  }
+  .accordion_title svg {
+    width: 0.896rem;
+    height: 1.52rem;
+  }
+  .accordion_content {
+    min-height: 12rem;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.426rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}

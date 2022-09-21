@@ -1,0 +1,10 @@
+.rating_wrapper{
+  margin-top: 3rem;
+}
+
+/*** Medias Queries ***/
+@media screen and (max-width: 1439px) {
+  .rating_wrapper{
+    margin-top: 0rem;
+  }
+}

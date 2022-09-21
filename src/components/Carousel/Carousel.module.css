@@ -1,0 +1,66 @@
+.carousel_wrapper {
+  position: relative;
+  width: 100%;
+  height: 41.5rem;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.carousel_wrapper img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel_arrowLeft,
+.carousel_arrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  width: 4.668rem;
+  height: 7.92rem;
+}
+
+.carousel_arrowLeft {
+  left: 3%;
+}
+
+.carousel_arrowRight {
+  right: 3%;
+}
+
+.carousel_counter {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.567rem;
+  position: absolute;
+  bottom: 2.492rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/*** Medias Queries ***/
+@media screen and (max-width: 475px) {
+  .carousel_wrapper {
+    width: 100%;
+    height: 25.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+  .carousel_arrowLeft,
+  .carousel_arrowRight {
+    width: 1.167rem;
+    height: 1.98rem;
+  }
+  .carousel_counter {
+    font-size: 1.2rem;
+    line-height: 1.711rem;
+  }
+}

@@ -15,11 +15,13 @@ const Gallery = (props) => {
         <Spinner />
       ) : (
         props.data.map((housing) => (
-          <Card
-            key={housing.id}
-            cover={housing.cover}
-            title={housing.title}
-          />
+          <Link key={housing.id} to={`/housing/${housing.id}`}>
+            <Card
+              key={housing.id}
+              cover={housing.cover}
+              title={housing.title}
+            />
+          </Link>
         ))
       )}
     </div>

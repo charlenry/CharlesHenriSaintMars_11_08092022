@@ -1,0 +1,29 @@
+.tag {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  /* min-width: 11.5rem; */
+  padding: 0 2rem;
+  background-color: #FF6060;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.996rem ;
+}
+
+/*** Medias Queries ***/
+@media screen and (max-width: 575px) {
+  .tag {
+    font-size: 1.2rem;
+    line-height: 1.426rem ;
+  }
+}
+@media screen and (max-width: 475px) {
+  .tag {
+    font-size: 1rem;
+    line-height: 1.426rem ;
+  }
+}
+

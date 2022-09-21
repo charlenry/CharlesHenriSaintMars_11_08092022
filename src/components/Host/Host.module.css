@@ -1,0 +1,29 @@
+.host_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.host_wrapper p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.567rem;
+}
+.host_photo {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+.host_photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/*** Medias Queries ***/
+@media screen and (max-width: 475px) {
+  .host_wrapper p {
+    font-size: 1.2rem;
+    line-height: 1.711rem;
+  }
+}
