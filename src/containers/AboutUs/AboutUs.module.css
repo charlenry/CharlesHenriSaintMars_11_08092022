@@ -1,0 +1,18 @@
+.accordion_wrapper {
+  padding-left: 10.8rem;
+  padding-right: 10.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3.3rem;
+  margin-top: 3.3rem;
+  margin-bottom: 4.6rem;
+  font-size: 2.4rem;
+}
+
+/*** Medias Queries ***/
+@media screen and (max-width: 992px) {
+  .accordion_wrapper {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}

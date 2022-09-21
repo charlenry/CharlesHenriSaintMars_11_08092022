@@ -22,7 +22,7 @@
   height: 2.64rem;
 }
 .accordion_content {
-  min-height: 20rem;
+  height: auto;
   width: 100%;
   padding: 2rem;
   font-size: 1.8rem;
