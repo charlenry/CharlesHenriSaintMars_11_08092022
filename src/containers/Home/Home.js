@@ -6,7 +6,7 @@ import shoreline from "../../assets/images/photos/shoreline.png";
 import Footer from "../../components/Footer/Footer";
 
 const Home = (props) => {
-  const { data, hasError, errorType, isLoading } = useFetch("https://charlenry.github.io/CharlesHenriSaintMars_11_08092022/build/logement.json");
+  const { data, hasError, errorType, isLoading } = useFetch("https://charlenry.github.io/CharlesHenriSaintMars_11_08092022/build/logements.json");
 
   return (
     <>
