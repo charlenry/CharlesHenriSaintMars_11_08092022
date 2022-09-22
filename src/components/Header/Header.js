@@ -16,7 +16,6 @@ const Header = (props) => {
       </div>
       <nav>
         <NavLink
-          aria-current="page d'accueil"
           to="/"
           className={({ isActive }) => {
             return isActive ? classes.activeLink : classes.nonActiveLink;
@@ -25,7 +24,6 @@ const Header = (props) => {
           Accueil
         </NavLink>
         <NavLink
-          aria-current="à propos"
           to="/about"
           className={({ isActive }) => {
             return isActive ? classes.activeLink : classes.nonActiveLink;
