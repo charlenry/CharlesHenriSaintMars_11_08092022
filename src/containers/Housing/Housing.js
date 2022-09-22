@@ -14,7 +14,7 @@ import useBrowserWidth from "../../containers/hooks/useBrowserWidth";
 
 const Housing = (props) => {
   const { housingId } = useParams();
-  const { data, hasError, errorType, isLoading } = useFetch("/logements.json");
+  const { data, hasError, errorType, isLoading } = useFetch("https://charlenry.github.io/CharlesHenriSaintMars_11_08092022/build/logements.json");
   const [housingChoice, setHousingChoice] = useState();
   const dimension = useBrowserWidth();
   const [height, setHeight] = useState();
