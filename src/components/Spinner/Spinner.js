@@ -1,9 +1,24 @@
-import classes from './Spinner.module.css';
+import classes from "./Spinner.module.css";
 
 const Spinner = (props) => {
   return (
-    <div>Loading Spinner</div>
+    <div className={ classes.spinner_wrapper }>
+      <div className={ classes.lds_spinner }>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
   );
-}
+};
 
 export default Spinner;

@@ -47,6 +47,13 @@
 }
 
 /*** Medias Queries ***/
+@media screen and (max-width: 992px) {
+  .carousel_arrowLeft,
+  .carousel_arrowRight {
+    width: 1.167rem;
+    height: 1.98rem;
+  }
+}
 @media screen and (max-width: 475px) {
   .carousel_wrapper {
     width: 100%;
