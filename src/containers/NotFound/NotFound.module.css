@@ -1,0 +1,116 @@
+.not_found_wrapper {
+  height: calc(120vh - 286px);
+  position: relative;
+  color: #ff6060;
+}
+.not_found_wrapper h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 28.8rem;
+  font-weight: 700;
+  line-height: 41.069rem;
+}
+.not_found_wrapper p {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 5.134rem;
+  width: 100%;
+}
+.not_found_wrapper a {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.567rem;
+  width: 100%;
+}
+.not_found_wrapper a:visited,
+.not_found_wrapper a:active {
+  color: #ff6060;
+}
+
+/*** Medias Queries ***/
+@media screen and (max-width: 1090px) {
+  .not_found_wrapper h1 {
+    font-size: calc(9.6rem + 3.84rem*3);
+    font-weight: 700;
+    line-height: 41.069rem;
+  }
+  .not_found_wrapper p {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 5.134rem;
+  }
+  .not_found_wrapper a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.567rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .not_found_wrapper h1 {
+    font-size: calc(9.6rem + 3.84rem*2);
+    font-weight: 700;
+    line-height: 31.069rem;
+  }
+  .not_found_wrapper p {
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 5.134rem;
+  }
+  .not_found_wrapper a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.567rem;
+  }
+}
+@media screen and (max-width: 776px) {
+  .not_found_wrapper h1 {
+    font-size: calc(9.6rem + 3.84rem*1);
+    font-weight: 700;
+    line-height: 21.069rem;
+  }
+  .not_found_wrapper p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 5.134rem;
+  }
+  .not_found_wrapper a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.567rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .not_found_wrapper h1 {
+    font-size: calc(9.6rem + 3.84rem*0);
+    font-weight: 700;
+    line-height: 13.69rem;
+  }
+  .not_found_wrapper p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.567rem;
+  }
+  .not_found_wrapper a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.996rem;
+  }
+}
+@media screen and (max-width: 476px) {
+  .not_found_wrapper p {
+    width: 80%;
+  }
+}
