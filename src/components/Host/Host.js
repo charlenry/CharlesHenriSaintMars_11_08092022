@@ -11,7 +11,7 @@ const Host = (props) => {
       </p>
 
       <div className={classes.host_photo}>
-        <img src={props.picture} alt={`photo de ${props.name}`} />
+        <img src={props.picture} alt={`${props.name}`} />
       </div>
     </div>
   );
